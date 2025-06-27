@@ -16,5 +16,6 @@ var mensagem = document.getElementById("mensagemSucesso");
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
     rostoNinja.style.display = "none";
+    formulario.style.display = "none";
     mensagem.classList.add("visivel");
 });
