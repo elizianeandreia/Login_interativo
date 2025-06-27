@@ -25,4 +25,3 @@ formulario.addEventListener("submit", (evento) => {
   formulario.style.display = "none"; 
   mensagem.classList.add("visivel");
 });
-
