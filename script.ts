@@ -1,3 +1,4 @@
+
 document.addEventListener("mousemove", (evento: MouseEvent) => {
   const pupilas = document.querySelectorAll<HTMLElement>(".pupila");
 
@@ -12,5 +13,17 @@ document.addEventListener("mousemove", (evento: MouseEvent) => {
 
     pupila.style.transform = `translate(${deslocamentoX}px, ${deslocamentoY}px)`;
   });
+});
+
+
+const formulario = document.querySelector(".form-login") as HTMLFormElement;
+const rostoNinja = document.querySelector(".rosto-ninja") as HTMLElement;
+const mensagem = document.getElementById("mensagemSucesso") as HTMLElement;
+
+formulario.addEventListener("submit", (evento) => {
+  evento.preventDefault();
+
+  rostoNinja.style.display = "none";
+  mensagem.classList.add("visivel");
 });
 

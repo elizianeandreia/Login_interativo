@@ -10,3 +10,11 @@ document.addEventListener("mousemove", function (evento) {
         pupila.style.transform = "translate(".concat(deslocamentoX, "px, ").concat(deslocamentoY, "px)");
     });
 });
+var formulario = document.querySelector(".form-login");
+var rostoNinja = document.querySelector(".rosto-ninja");
+var mensagem = document.getElementById("mensagemSucesso");
+formulario.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+    rostoNinja.style.display = "none";
+    mensagem.classList.add("visivel");
+});
